@@ -27,6 +27,9 @@ services:
       # Public root URL used by webhook nodes, including WhatsApp
       - key: WEBHOOK_URL
         value: https://n8n-service-wy7r.onrender.com/
+      # Render places n8n behind one reverse proxy
+      - key: N8N_PROXY_HOPS
+        value: "1"
       # Connect n8n to the Render Postgres database defined below
       - key: DB_TYPE
         value: postgresdb
