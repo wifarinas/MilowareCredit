@@ -15,8 +15,8 @@ services:
     # You can give the service any name
     name: n8n-service
     image:
-      # Pin n8n 1.x to fit within Render Free's 256 MB memory limit
-      url: docker.io/n8nio/n8n:1.95.3
+      # Pin to the minimum secure n8n 1.x release supported by this deployment
+      url: docker.io/n8nio/n8n:1.121.0
     envVars:
       # Generates a base64-encoded key for encrypting credentials in n8n
       - key: N8N_ENCRYPTION_KEY
